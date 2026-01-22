@@ -1,0 +1,117 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:scheme_name",
+ "creation": "2026-01-22 16:18:53.852883",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "scheme_details_section",
+  "scheme_name",
+  "kra_pin",
+  "column_break_pwbq",
+  "rba_registration_no",
+  "scheme_type",
+  "section_break_czhy",
+  "structure",
+  "current_status",
+  "column_break_nrkp",
+  "commencement_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "scheme_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Scheme Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "rba_registration_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "RBA Registration No",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "kra_pin",
+   "fieldtype": "Data",
+   "label": "KRA PIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_pwbq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scheme_type",
+   "fieldtype": "Select",
+   "label": "Scheme Type",
+   "options": "Occupational\nUmbrella\nIndividual"
+  },
+  {
+   "fieldname": "scheme_details_section",
+   "fieldtype": "Section Break",
+   "label": "Scheme Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_czhy",
+   "fieldtype": "Section Break",
+   "label": "Scheme Types"
+  },
+  {
+   "fieldname": "structure",
+   "fieldtype": "Select",
+   "label": "Structure",
+   "options": "Defined Contribution\nDefined Benefit"
+  },
+  {
+   "fieldname": "current_status",
+   "fieldtype": "Select",
+   "label": "Current Status",
+   "options": "Active\nDormant\nWinding Up"
+  },
+  {
+   "fieldname": "column_break_nrkp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "commencement_date",
+   "fieldtype": "Date",
+   "label": "Commencement Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 16:35:49.328954",
+ "modified_by": "Administrator",
+ "module": "Pension ERP",
+ "name": "Pension Scheme",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PF-{pension_scheme}-{####}",
+ "creation": "2026-01-22 16:31:10.637950",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fund_name",
+  "currency",
+  "unit_price",
+  "column_break_olrd",
+  "pension_scheme",
+  "launch_date",
+  "current_nav"
+ ],
+ "fields": [
+  {
+   "fieldname": "fund_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fund Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_olrd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pension_scheme",
+   "fieldtype": "Link",
+   "label": "Pension Scheme",
+   "options": "Pension Scheme"
+  },
+  {
+   "default": "KES",
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "unit_price",
+   "fieldtype": "Currency",
+   "label": "Unit Price",
+   "precision": "4",
+   "read_only": 1
+  },
+  {
+   "fieldname": "launch_date",
+   "fieldtype": "Date",
+   "label": "Launch Date"
+  },
+  {
+   "fieldname": "current_nav",
+   "fieldtype": "Currency",
+   "label": "Current NAV"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 16:34:30.349251",
+ "modified_by": "Administrator",
+ "module": "Pension ERP",
+ "name": "Pension Fund",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
