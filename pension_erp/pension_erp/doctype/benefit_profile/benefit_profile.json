@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "BP-{pension_scheme}-{####}",
+ "creation": "2026-01-22 17:21:32.122884",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "benefist_details_section",
+  "profile_name",
+  "column_break_twzn",
+  "pension_scheme",
+  "exit_type",
+  "service_years_section",
+  "min_service_years",
+  "max_service_years",
+  "column_break_ttbv",
+  "employee_portion_payable_",
+  "employer_portion_payable_",
+  "interest_payable"
+ ],
+ "fields": [
+  {
+   "fieldname": "benefist_details_section",
+   "fieldtype": "Section Break",
+   "label": "Benefist Details"
+  },
+  {
+   "fieldname": "profile_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Profile Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_twzn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pension_scheme",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Pension Scheme",
+   "options": "Pension Scheme",
+   "reqd": 1
+  },
+  {
+   "default": "Retirement",
+   "fieldname": "exit_type",
+   "fieldtype": "Select",
+   "label": "Exit Type",
+   "options": "Resignation\nDismissal\nRetirement\nDeath\nDisability"
+  },
+  {
+   "fieldname": "service_years_section",
+   "fieldtype": "Section Break",
+   "label": "Service Years"
+  },
+  {
+   "fieldname": "min_service_years",
+   "fieldtype": "Int",
+   "label": "Min Service Years"
+  },
+  {
+   "fieldname": "max_service_years",
+   "fieldtype": "Int",
+   "label": "Max Service Years"
+  },
+  {
+   "fieldname": "column_break_ttbv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_portion_payable_",
+   "fieldtype": "Percent",
+   "label": "Employee Portion Payable (%)"
+  },
+  {
+   "fieldname": "employer_portion_payable_",
+   "fieldtype": "Percent",
+   "label": "Employer Portion Payable (%)"
+  },
+  {
+   "default": "0",
+   "fieldname": "interest_payable",
+   "fieldtype": "Check",
+   "label": "Interest Payable"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 17:38:13.706972",
+ "modified_by": "Administrator",
+ "module": "Pension ERP",
+ "name": "Benefit Profile",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

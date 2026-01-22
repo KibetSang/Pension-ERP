@@ -17,8 +17,8 @@
   "section_break_dhnn",
   "employer",
   "pension_scheme",
-  "column_break_sxis",
   "member_status",
+  "column_break_sxis",
   "date_joined_scheme",
   "retirement_date"
  ],
@@ -72,8 +72,10 @@
    "options": "Male\nFemale"
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_dhnn",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Pension Details"
   },
   {
    "fieldname": "employer",
@@ -114,7 +116,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-01-22 16:59:53.758412",
+ "modified": "2026-01-22 17:16:08.597958",
  "modified_by": "Administrator",
  "module": "Pension ERP",
  "name": "Member",
