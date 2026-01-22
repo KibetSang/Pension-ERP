@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MEM-{employer}-{####}",
+ "creation": "2026-01-22 16:49:56.739905",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "member_details_section",
+  "first_name",
+  "id_number",
+  "date_of_birth",
+  "column_break_itvk",
+  "last_name",
+  "kra_pin",
+  "gender",
+  "section_break_dhnn",
+  "employer",
+  "pension_scheme",
+  "column_break_sxis",
+  "member_status",
+  "date_joined_scheme",
+  "retirement_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Details"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "id_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "ID Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "column_break_itvk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "kra_pin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KRA PIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "section_break_dhnn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employer",
+   "fieldtype": "Link",
+   "label": "Employer",
+   "options": "Employer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pension_scheme",
+   "fieldtype": "Link",
+   "label": "Pension Scheme",
+   "options": "Pension Scheme"
+  },
+  {
+   "fieldname": "column_break_sxis",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Active",
+   "fieldname": "member_status",
+   "fieldtype": "Select",
+   "label": "Member Status",
+   "options": "Active\nDeferred\nRetired\nExited\nDeceased"
+  },
+  {
+   "fieldname": "date_joined_scheme",
+   "fieldtype": "Date",
+   "label": "Date Joined Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "retirement_date",
+   "fieldtype": "Date",
+   "label": "Retirement Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 16:59:53.758412",
+ "modified_by": "Administrator",
+ "module": "Pension ERP",
+ "name": "Member",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

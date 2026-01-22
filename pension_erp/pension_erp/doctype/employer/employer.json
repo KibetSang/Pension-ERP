@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:employer_name",
+ "creation": "2026-01-22 16:43:03.011053",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "employer_name",
+  "column_break_jrms",
+  "kra_pin",
+  "section_break_taow",
+  "pension_scheme",
+  "contact_person",
+  "email_address",
+  "status",
+  "column_break_wbjf",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "employer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employer Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_jrms",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "kra_pin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "KRA PIN",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_taow",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "pension_scheme",
+   "fieldtype": "Link",
+   "label": "Pension Scheme",
+   "options": "Pension Scheme",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nSuspended"
+  },
+  {
+   "fieldname": "column_break_wbjf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-01-22 16:49:10.320152",
+ "modified_by": "Administrator",
+ "module": "Pension ERP",
+ "name": "Employer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
